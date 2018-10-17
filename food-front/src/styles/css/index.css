@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.25;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  margin-bottom: 15px;
+}
+.topbar__toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.topbar__toolbar .link {
+  color: #FFF;
+  text-decoration: none;
+}
+.topbar__toolbar .link:hover {
+  color: #D3D3D3;
+}
+.topbar__toolbar img {
+  width: 60px;
+  height: 60px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+  font-weight: 400;
+  font-family: roboto;
+  background-color: #D3D3D3;
+  min-height: 100%;
+}
+.homepage__welcome {
+  text-align: center;
+  margin: 10px;
+}
+.location__container .location__message {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.location__container .location__form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.restaurants__container .restaurants__message {
+  text-align: center;
+}
+.restaurants__container .restaurants__info {
+  transition: 0.4s;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+.restaurants__container .restaurants__info:hover {
+  background-color: #ffffff;
+  padding: 10px 0px;
+}
+.restaurants__container .restaurants__info h2 {
+  font-weight: 600;
+}
+.restaurants__container .restaurants__info .restaurants__link {
+  color: #000;
+  text-decoration: none;
+}
+.restaurants__container .restaurants__info .restaurants__link:hover {
+  text-decoration: underline;
+}
+.calories__container .calories__message {
+  margin-left: 26%;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 50%;
+}
+.calories__container .calories__form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.foods__container {
+  text-align: center;
+}
+.foods__container h3 {
+  font-weight: 600;
+}
+.foods__container .foods__restaurant-info {
+  margin-bottom: 15px;
+}
+.foods__container .meal-item {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5px 0.5px;
+  padding: 2px 0;
+  margin: 8px;
+}
+.foods__container .meal-calories {
+  font-weight: 600;
+}
+.about__text {
+  margin: 0 2%;
+}
