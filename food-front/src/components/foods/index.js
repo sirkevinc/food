@@ -22,8 +22,8 @@ class Foods extends React.Component {
   getFoods = () => {
     // const exampleURL = 'https://trackapi.nutritionix.com/v2/search/instant?query=dominos';
     const URL = `https://trackapi.nutritionix.com/v2/search/instant?query=${this.state.name}`;
-    const appId = '46d99108';
-    const appKey = 'be332ae5857d7726ece06fe55b0d76cc';
+    const appId = process.env.REACT_APP_APPID;
+    const appKey = process.env.REACT_APP_APPKEY;
     const headers = { headers: {'x-app-id': appId, 'x-app-key': appKey} };
 
     axios.get(URL, headers)

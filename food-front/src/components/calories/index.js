@@ -31,7 +31,6 @@ class Calories extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="calories__container">
         <p className="calories__message">
