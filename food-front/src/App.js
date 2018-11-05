@@ -12,8 +12,6 @@ import About from './components/about';
 import Homepage from './components/homepage';
 import Foods from './components/foods';
 
-require('dotenv').config();
-
 class App extends Component {
   render() {
     return (

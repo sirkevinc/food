@@ -21,8 +21,8 @@ class Restaurants extends React.Component {
     const longitude = this.props.longitude;
     const URL = `https://trackapi.nutritionix.com/v2/locations?ll=${latitude},${longitude}&distance=1000m&limit=15`;
     // const exampleURL = 'https://trackapi.nutritionix.com/v2/locations?ll=38.89814,-77.029446&distance=1000m&limit=5';
-    const appId = process.env.REACT_APP_API_ID;
-    const appKey = process.env.REACT_APP_API_KEY;
+    const appId = '46d99108';
+    const appKey = 'be332ae5857d7726ece06fe55b0d76cc';
     const headers = { headers: {'x-app-id': appId, 'x-app-key': appKey} };
 
     axios.get(URL,
@@ -30,9 +30,6 @@ class Restaurants extends React.Component {
     )
       .then((response) => {
         const restaurantInfo = response.data.locations
-        // restaurantInfo.forEach(restaurant => {
-        //   console.log(restaurant.name)
-        // })
         this.setState({ restaurants: restaurantInfo });
       })
       .catch((error) => {

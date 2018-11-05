@@ -55,9 +55,6 @@ class Homepage extends React.Component {
   }
   
   render() {
-    console.log(process.env.REACT_APP_API_ID)
-    console.log(process.env.REACT_APP_API_KEY)
-    console.log(process.env.REACT_APP_LOCATION_NAME)
     return (
       <div className="app-container">
         {this.state.step === 1 ?

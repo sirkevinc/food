@@ -36,7 +36,7 @@ class Location extends React.Component {
   }
 
   getLocationZipCode = (zipCode) => {
-    const username = process.env.REACT_APP_LOCATION_NAME;
+    const username = 'Gen3tix';
     const URL = `http://api.geonames.org/postalCodeSearchJSON?postalcode=${zipCode}&country=US&username=${username}`
 
     axios.get(URL)
