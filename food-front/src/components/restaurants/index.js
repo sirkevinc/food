@@ -19,10 +19,11 @@ class Restaurants extends React.Component {
     // const location = this.props.location;
     const latitude = this.props.latitude;
     const longitude = this.props.longitude;
-    const URL = `https://trackapi.nutritionix.com/v2/locations?ll=${latitude},${longitude}&distance=1000m&limit=15`;
+    const URL = `https://trackapi.nutritionix.com/v2/locations?ll=${latitude},${longitude}&distance=2000m&limit=5`;
     // const exampleURL = 'https://trackapi.nutritionix.com/v2/locations?ll=38.89814,-77.029446&distance=1000m&limit=5';
     const appId = process.env.REACT_APP_APPID;
     const appKey = process.env.REACT_APP_APPKEY;
+    
     const headers = { headers: {'x-app-id': appId, 'x-app-key': appKey} };
 
     axios.get(URL,

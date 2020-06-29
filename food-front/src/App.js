@@ -19,7 +19,8 @@ class App extends Component {
         <div className="App">
           <AppBar className="topbar__container" position="static">
             <Toolbar className="topbar__toolbar">
-              <h3 className="home"><Link className="link" to="/">Home</Link></h3>
+              <h3 className="home"><a className="link" href="http://localhost:3000">Home</a></h3>
+              {/* <h3 className="home"><Link className="link" to="/">Home</Link></h3> */}
               <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/129/fork-and-knife-with-plate_1f37d.png"
                 alt="emoji"
               />

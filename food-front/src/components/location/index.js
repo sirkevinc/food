@@ -38,9 +38,9 @@ class Location extends React.Component {
   getLocationZipCode = (zipCode) => {
     const username = process.env.REACT_APP_USERNAME;
     const URL = `http://api.geonames.org/postalCodeSearchJSON?postalcode=${zipCode}&country=US&username=${username}`
-
     axios.get(URL)
       .then((response) => {
+        console.log('location', response)
         const locationData = response.data.postalCodes[0];
         const latitude = locationData.lat;
         const longitude = locationData.lng;
@@ -54,24 +54,24 @@ class Location extends React.Component {
       })
   }
 
-  geoFindMe = () => {
-    if (!navigator.geolocation){
-      return;
-    }
+  // geoFindMe = () => {
+  //   if (!navigator.geolocation){
+  //     return;
+  //   }
   
-    const success = (position) => {
-      const latitude  = position.coords.latitude;
-      const longitude = position.coords.longitude;
+  //   const success = (position) => {
+  //     const latitude  = position.coords.latitude;
+  //     const longitude = position.coords.longitude;
 
-      this.setState({ latitude, longitude });
-    }
+  //     this.setState({ latitude, longitude });
+  //   }
   
-    const error = () => {
-      console.error('error')
-    }
+  //   const error = () => {
+  //     console.error('error')
+  //   }
   
-    navigator.geolocation.getCurrentPosition(success, error);
-  }
+  //   navigator.geolocation.getCurrentPosition(success, error);
+  // }
 
   render() {
     return (
